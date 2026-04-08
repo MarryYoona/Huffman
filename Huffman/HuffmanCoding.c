@@ -303,7 +303,7 @@ void replaceHuffmanWithWord(struct HuffmanNode words[], int numWords, const char
 }
 
 int main(void) {
-    wordCount("D:\\»ô·òÂü.txt");
+    wordCount("D:\\huffman_input.txt");
 
     WordInfo wordArray[MAX_ENTRIES];
     int arraySize = 0;
@@ -324,7 +324,7 @@ int main(void) {
     struct HuffmanNode hm[M] = { {'\0'},{'\0'} };
     writeHuffmanNode(hm, ht, hcd, arraySize);
 
-    replaceWordWithHuffman(hm, arraySize, "D:\\»ô·òÂü.txt", "D:\\codefile.txt");
+    replaceWordWithHuffman(hm, arraySize, "D:\\huffman_input.txt", "D:\\codefile.txt");
 
     replaceHuffmanWithWord(hm, arraySize, "D:\\codefile.txt", "D:\\textfile.txt");
 
